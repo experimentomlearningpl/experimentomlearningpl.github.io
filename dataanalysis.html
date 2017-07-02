@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Head--> 
+ <head>
+    <title>Pedagogical Pattern Language for Mobile Learning Applications: Lab Package</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<meta charset="utf-8">
+	
+	<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#nav-mobile").html($("#nav-main").html());
+        $("#nav-trigger span").click(function(){
+            if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                $(this).removeClass("open");
+            } else {
+                $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                $(this).addClass("open");
+            }
+        });
+    });
+</script>
+
+  </head>
+
+
+  <body>
+<!-- Header-->  
+  <header>		
+		<h2 style="text-align: center;"><strong>Pedagogical Pattern Language for Mobile Learning Applications: An Experimental Study</strong></h2>
+
+		<div style="text-align: center;"><strong>Maria Lydia Fioravanti, Camila Dias de Oliveira,  Lilian Passos Scatalon and Ellen Francine Barbosa</strong></div>
+
+		<div style="text-align: center;">&nbsp;</div>
+
+		<div style="text-align: center;">
+			<div>University of S&atilde;o Paulo &nbsp;- USP</div>
+			<div>Institute of Mathematics and Computer Science (ICMC)</div>
+			<div>S&atilde;o Carlos - SP, Brazil</div>
+			<address>mlfioravanti@usp.br, oliveiracamiladias@gmail.com, lilian.scatalon@gmail.com, francine@icmc.usp.br</address>
+		</div>
+	</header>
+	
+<!-- Container-->  	
+	<div class="container">
+        <div id="nav-trigger">
+            <span>Menu</span>
+        </div>
+        <nav id="nav-main">
+            <ul>
+                <li><a href="index.html">Protocol</a></li>
+                <li><a href="instrumentation.html">Instrumentation</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="dataanalysis.html">Data Analysis</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile"></nav>
+
+<!--Section-->  			
+		<section>
+			<p><strong>DATA ANALYSIS</strong></p>
+			<div style="text-align: center;">&nbsp;</div>
+			<div>
+				<b>Test Used:</b> Mann-Whitney</br>
+				<b>Software Used:</b> BioEstat 5.3
+				
+				<div style="text-align: center;">&nbsp;</div>
+				<b>Q1.</b> Does the use of MLearning-PL provide a higher percentage of problems solved?</br>
+				</br>
+				<center>
+					<img src="img/Q1.png"></img>
+					<div style="text-align: center;">&nbsp;</div>
+					<div style="text-align: center;">&nbsp;</div>
+					<b>Box Splot Q1.</b></br>
+					<img src="img/boxSplotQ1.png"></img>
+				</center>
+				
+				<div style="text-align: center;">&nbsp;</div>
+				<b>Q2.</b> Does the use of MLearning-PL provide more complete solutions?</br>
+				</br>
+				<center>
+					<img src="img/Q2.png"></img>
+					<div style="text-align: center;">&nbsp;</div>
+					<div style="text-align: center;">&nbsp;</div>
+					<b>Box Splot Q2.</b></br>
+					<img src="img/boxSplotQ2.png"></img>
+				</center>
+				
+				<div style="text-align: center;">&nbsp;</div>
+				<b>Q3.</b> Does the use of MLearning-PL provide more complex solutions?</br>
+				</br>
+				<center>
+					<img src="img/Q3.png"></img>
+					<div style="text-align: center;">&nbsp;</div>
+					<div style="text-align: center;">&nbsp;</div>
+					<b>Box Splot Q3.</b></br>
+					<img src="img/boxSplotQ3.png"></img>
+				</center>
+				
+				<div style="text-align: center;">&nbsp;</div>
+				<b>Q4.</b> Does the use of MLearning-PL provide faster problem solving?</br>
+				</br>
+				<center>
+					<img src="img/Q4.png"></img>
+					<div style="text-align: center;">&nbsp;</div>
+					<div style="text-align: center;">&nbsp;</div>
+					<b>Box Splot Q4.</b></br>
+					<img src="img/boxSplotQ4.png"></img>
+				</center>
+			</div>
+			
+		<div style="text-align: center;">&nbsp;</div>
+		<b>Activities: Graphics</b></br>
+		<p>How difficult was it for you to carry out the activities?</p>
+		
+				<center>
+					<b>Activity 1</b></br>
+					<img src="img/activity1.png">
+					
+					<div style="text-align: center;">&nbsp;</div>
+					<b>Activity 2</b></br>
+					<img src="img/activity2.png">
+					
+					<div style="text-align: center;">&nbsp;</div>
+					<b>Activity 3</b></br>
+					<img src="img/activity3.png">
+					
+					<div style="text-align: center;">&nbsp;</div>
+					<b>Activity 4</b></br>
+					<img src="img/activity4.png">
+					
+					<div style="text-align: center;">&nbsp;</div>
+					<b>Activity 5</b></br>
+					<img src="img/activity5.png">
+				</center>
+				</br>
+		
+		<section>
+
+<!-- Footer-->  			
+		<footer>
+			University of São Paulo  - USP </br>
+			Institute of Mathematics and Computer Science (ICMC)</br>
+			São Carlos - SP, Brazil
+			
+		</footer>
+	</div>
+  </body>
+</html>

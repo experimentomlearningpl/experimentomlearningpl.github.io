@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Head--> 
+ <head>
+    <title>Pedagogical Pattern Language for Mobile Learning Applications: Lab Package</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<meta charset="utf-8">
+	
+	<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#nav-mobile").html($("#nav-main").html());
+        $("#nav-trigger span").click(function(){
+            if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                $(this).removeClass("open");
+            } else {
+                $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                $(this).addClass("open");
+            }
+        });
+    });
+</script>
+
+  </head>
+
+
+  <body>
+<!-- Header-->  
+  <header>		
+		<h2 style="text-align: center;"><strong>Pedagogical Pattern Language for Mobile Learning Applications: An Experimental Study</strong></h2>
+
+		<div style="text-align: center;"><strong>Maria Lydia Fioravanti, Camila Dias de Oliveira,  Lilian Passos Scatalon and Ellen Francine Barbosa</strong></div>
+
+		<div style="text-align: center;">&nbsp;</div>
+
+		<div style="text-align: center;">
+			<div>University of S&atilde;o Paulo &nbsp;- USP</div>
+			<div>Institute of Mathematics and Computer Science (ICMC)</div>
+			<div>S&atilde;o Carlos - SP, Brazil</div>
+			<address>mlfioravanti@usp.br, oliveiracamiladias@gmail.com, lilian.scatalon@gmail.com, francine@icmc.usp.br</address>
+		</div>
+	</header>
+	
+<!-- Container-->  	
+	<div class="container">
+        <div id="nav-trigger">
+            <span>Menu</span>
+        </div>
+        <nav id="nav-main">
+            <ul>
+                <li><a href="index.html">Protocol</a></li>
+                <li><a href="instrumentation.html">Instrumentation</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="dataanalysis.html">Data Analysis</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile"></nav>
+
+<!--Section-->  			
+		<section>
+			<div class="texto">
+			<!--Identification-->  	
+				<strong>1. IDENTIFICATION </strong>
+				</br>
+				<p><strong>Title:</strong> Mobile Learning Applications' Pedagogical Problems Solving</p>
+				<p><strong>Theme:</strong> Validating the effectiveness and efficiency of MLearning-PL pattern language in comparison to an ad hoc approach in the context of mobile learning applications’ problems solving, which are useful for requirements elicitation and analysis.</p>
+				<p><strong>Technical Area:</strong> Pedagogical Pattern Language for Mobile Learning</p>
+				<p><strong>Author:</strong> Maria Lydia Fioravanti, Camila Dias de Oliveira, Lilian Passos Scatalon and Ellen Francine Barbosa</p>
+				<p><strong>Affiliation:</strong> ICMC-USP</p>
+				<p><strong>Location:</strong> ICMC-USP</p>
+				<p><strong>Date:</strong> June/2017</p>
+			
+			<div style="text-align: center;">&nbsp;</div>
+			<div style="text-align: center;">&nbsp;</div>
+			</div>
+			
+			<div class="texto">
+			<!-- Introduction-->  	
+				<strong>2. INTRODUCTION</strong>
+				</br>
+					<p>Patterns and Pattern Languages are mechanisms to describe best practices, good designs, and capture experience in a way that it is possible for others to reuse this experience. Similarly, pedagogical patterns try to capture expert knowledge regarding the practice of teaching and learning. The intent is to capture the essence of the practice in a compact form that can be easily communicated to those who need this knowledge. Presenting this information in a coherent and accessible form can mean the difference between the need of every new instructor to relearn what is already well known by senior faculty, as well as the easy knowledge transfer of teaching within the community. Therefore, pedagogical patterns can be a tool to assist in the design of new teaching and learning applications as well as to the improvement of the existing ones.</p>
+					<p>Aiming to bridge this gap, a pedagogical pattern language entitled MLearning-PL has been proposed to guide the requirements elicitation and analysis phases of mobile learning applications projects. The main idea is to provide support on pedagogical issues to help analysts to avoid or diminish already known pedagogical problems. In a real scenario, suppose a geography teacher wants to create a mobile application to teach geography to her/his students. Since s/he takes on the role of requirements analyst, MLearning-PL is helpful during this process to support the teacher in eliciting the pedagogical requirements of the mobile application. S/he can consult MLearning-PL to mitigate the risk of not considering some important pedagogical aspects.</p>
+			
+			<div style="text-align: center;">&nbsp;</div>
+			<div style="text-align: center;">&nbsp;</div>
+			</div>
+
+			<div class="texto">			
+			<!-- Characterization-->  			
+				<strong>3. CHARACTERIZATION</strong>
+				</br>
+				<p><strong>Type:</strong> in vitro.</p>
+				<p><strong>Domain:</strong> Computer Science Education.</p>
+				<p><strong>Language:</strong> English and Portuguese</p>
+				<p><strong>Estimated execution number:</strong> 1.</p>
+				<p><strong>Glossary:</strong> 
+				<ul>
+				 <li><strong>Pattern:</strong> According to Alexander [1], “each pattern describes a problem which occurs over and over again in our environment, and then 		describes the core of the solution to that problem, in such a way you can use this solution a million times over, without ever doing it the same way twice”.</li>
+
+				<li><strong>Pattern Language:</strong> A pattern language is a structured collection of patterns that rely on each other to transform requirements and constraints on an architecture.</li>		
+
+				<li><strong>Mobile Learning:</strong> Learning modality characterized by the ability to provide an effective interaction among students, tutors and teachers, allowing them to contribute, participate and access the educational environment through mobile devices (cell phones, PDAs, smartphones, tablets, laptops, among others) anytime and anywhere.</li>
+				</ul>
+
+				<div style="text-align: center;">&nbsp;</div>
+				<div style="text-align: center;">&nbsp;</div>
+			</div>			
+			
+			<div class="texto">
+			<!-- Experimental Study Definition-->  			
+				<strong>4. EXPERIMENTAL STUDY DEFINITION</strong>
+				<p><strong>Object of Study:</strong> MLearning-PL</p> 
+				<p><strong>Global Objective:</strong> Evaluate MLearning-PL effectiveness and efficiency for requirements elicitation and analysis in relation to an ad hoc approach, i.e., no specific approach is used, only previous background.</p>
+				<p><strong>Specific Aims:</strong></p>
+					<center>
+					<table class="sem-borda">
+						<tbody>
+							<tr>
+								<td class="sem-borda" style="text-align:right;"><i>Analyze</i></td>
+								<td class="sem-borda">.......................................</td>
+								<td class="sem-borda">MLearning-PL</td>
+							</tr>
+							<tr>
+								<td class="sem-borda" style="text-align:right;"><i>For the purpose of</i></td>
+								<td class="sem-borda">.......................................</td>
+								<td class="sem-borda">Evaluation</td>
+							</tr>
+							<tr>
+								<td class="sem-borda" style="text-align:right;"><i>With respect to its</i></td>
+								<td class="sem-borda">.......................................</td>
+								<td class="sem-borda">Effectiveness and Efficiency</td>
+							</tr>
+							<tr>
+								<td class="sem-borda" style="text-align:right;"><i>From the point of view of the</i></td>
+								<td class="sem-borda">.......................................</td>
+								<td class="sem-borda">Requirements Analysts</td>
+							</tr>
+							<tr>
+								<td class="sem-borda" style="text-align:right;"><i>In the context of</i></td>
+								<td class="sem-borda">.......................................</td>
+								<td class="sem-borda">Teachers and/or Tutors</td>
+							</tr>
+						</tbody>
+					</table>
+					</center>
+								
+				<p><strong>Quality Focus:</strong>Effectiveness and Efficiency.</p> 
+				<p><strong>Context:</strong> The study will be conducted in the academic environment and tutors and teachers will be the subjects of the experiment.</p>
+				<p><strong>Questions and Metrics:</strong></p>
+				
+				
+				<strong><u>Questions</u></strong></br>
+					<ul>
+						<li>Does the use of MLearning-PL provide a higher percentage of problems solved?</li>
+						<li>Does the use of MLearning-PL provide more complete solutions?</li>
+						<li>Does the use of MLearning-PL provide more complex solutions?</li>
+						<li>Does the use of MLearning-PL provide faster problem solving?</li>
+					</ul>
+				<div style="text-align: center;">&nbsp;</div>
+				
+				
+				<strong><u>	Metrics</u></strong></br>
+					<ul>
+						<li><b>Q1.</b> Effectiveness: The average percentage of problems solved correctly. It is calculated as: </br></br></li>
+						<center><img src="img/formula-percent-prob.png"/></center>
+						
+						Where
+						<ul>
+							<li style="list-style-type:circle;"><i>si</i> is the amount of problems solved by subject <i>i</i>,</li> 
+							<li style="list-style-type:circle;"><i>m</i> is the total amount of problems to be solved and</li>  
+							<li style="list-style-type:circle;"><i>n</i> is the number of subjects in the group.</li>
+						</ul>
+					</ul>
+					<div style="text-align: center;">&nbsp;</div>
+					<ul>
+						<li><b>Q2.</b> Completeness: The average score of completeness. It is calculated as: </br></br></li>
+						<center><img src="img/formula-completeness.png"/></center>
+						Where
+						<ul>
+							<li style="list-style-type:circle;"><i>xi</i> is the score of completeness,</li> 
+							<li style="list-style-type:circle;"><i>p</i> is the number of the problem,</li>  
+							<li style="list-style-type:circle;"><i>m</i> is the total amount of problems to be solved and</li>
+							<li style="list-style-type:circle;"><i>n</i> is the number of subjects in the group.</li>
+						</ul>
+					</ul>
+					</br>
+					The score of completeness for each solution will be measured using an adaptation of Degree of Closeness (DoC) Evaluation Criteria [2]:
+					</br></br>
+					
+					<center>
+						<table>
+							<thead>
+									<tr>
+										<th><b>DoC Score</b></th>
+										<th><b>Interpretation</b></th>
+									<tr/>
+							</thead>
+							<tbody>
+								<tr>
+									<td>5</td>
+									<td>Touchdown. The solution is complete.</td>
+								</tr>	
+								<tr>
+									<td>4</td>
+									<td>Close but something missing. The solution is satisfactory, but some details are missing.</td>
+								</tr>	
+								<tr>
+									<td>3</td>
+									<td>Close but far away. The solution can be applied, but it is far from being complete.</td>
+								</tr>	
+								<tr>
+									<td>2</td>
+									<td>Close but even farther away. The solution is not complete enough.</td>
+								</tr>	
+								<tr>
+									<td>1</td>
+									<td>Not even close. The solution shows that the subject had no idea about how to solve the problem.</td>
+								</tr>	
+							</tbody>
+						</table>
+					</center>
+					
+					<div style="text-align: center;">&nbsp;</div>
+					<ul>
+						<li><b>Q3.</b> Complexity:  The average score of complexity. It is calculated as: </br></br></li>
+						<center><img src="img/formula-complexity.png"/></center>
+						
+						Where
+						<ul>
+							<li style="list-style-type:circle;"><i>xi</i> is the score of complexity,</li> 
+							<li style="list-style-type:circle;"><i>p</i> is the number of the problem,</li>  
+							<li style="list-style-type:circle;"><i>m</i> is the total amount of problems to be solved and</li>
+							<li style="list-style-type:circle;"><i>n</i> is the number of subjects in the group.</li>
+						</ul>
+					</ul>
+					
+					</br>
+					The score of complexity for each solution will be measured using an adaptation of Degree of Closeness (DoC) Evaluation Criteria [2]:
+					</br></br>
+					
+					<center>
+						<table>
+							<thead>
+									<tr>
+										<th><b>DoC Score</b></th>
+										<th><b>Interpretation</b></th>
+									<tr/>
+							</thead>
+							<tbody>
+								<tr>
+									<td>5</td>
+									<td>Touchdown. The solution has a high degree of complexity.</td>
+								</tr>	
+								<tr>
+									<td>4</td>
+									<td>Close but something missing. The solution has a medium degree of complexity.</td>
+								</tr>	
+								<tr>
+									<td>3</td>
+									<td>Close but far away. The solution has a low degree of complexity.</td>
+								</tr>	
+								<tr>
+									<td>2</td>
+									<td>Close but even farther away. The solution is simple.</td>
+								</tr>	
+								<tr>
+									<td>1</td>
+									<td>Not even close. The solution shows that the subject had no idea about how to solve the problem.</td>
+								</tr>	
+							</tbody>
+						</table>
+					</center>
+					
+					<div style="text-align: center;">&nbsp;</div>
+					
+					<ul>
+						<li><b>Q4.</b> Efficiency: The average time to solve all problems. It is calculated as: </br></br></li>
+						<center><img src="img/formula-time.png"/></center>
+						
+						Where
+						<ul>
+							<li style="list-style-type:circle;"><i>xi</i> is the time to solve the problems by subject <i>i</i> and</li> 
+							<li style="list-style-type:circle;"><i>n</i> is the number of subjects in the group.</li>
+						</ul>
+					</ul>
+					
+					<div style="text-align: center;">&nbsp;</div>
+			</div>
+			
+			<div class="texto">
+			<!-- Planning-->  			
+				<strong>5. PLANNING</strong>
+				<p><strong>Hypothesis Formulation</strong></p></br>
+						<b>Q1.</b> Does the use of MLearning-PL provide a higher percentage of problems solved?</br>
+						<div class="margin-20">Null hypothesis: The effectiveness of MLearning-PL is lower or equal to ad hoc .</div>
+						<li class="margin-40">H10: Effectiveness(MLearning-PL ) ≤ Effectiveness (ad hoc).</li>
+						<div class="margin-20">Alternative hypothesis: The effectiveness of MLearning-PL is higher than ad hoc approach.</div>
+						<li class="margin-40">H1a: Effectiveness (MLearning-PL ) > Effectiveness (ad hoc).</li>
+				
+				<div style="text-align: center;">&nbsp;</div>
+						<b>Q2.</b> Does the use of MLearning-PL provide more complete solutions?</br>
+						<div class="margin-20">Null hypothesis: The completeness of solutions of MLearning-PL is lower or equal to ad hoc approach.</div>
+						<li class="margin-40">H20: Completeness (MLearning-PL ) ≤ Completeness (ad hoc).</li>
+						<div class="margin-20">Alternative hypothesis: The completeness of solutions of MLearning-PL is higher than ad hoc approach.</div>
+						<li class="margin-40">H2a: Completeness (MLearning-PL ) > Completeness (ad hoc).</li>
+						
+				<div style="text-align: center;">&nbsp;</div>
+						<b>Q3.</b> Does the use of MLearning-PL provide more complex solutions?</br>
+						<div class="margin-20">Null hypothesis: The complexity of solutions of MLearning-PL is lower or equal to ad hoc approach.</div>
+						<li class="margin-40">H30: Complexity (MLearning-PL ) ≤ Complexity (ad hoc).</li>
+						<div class="margin-20">Alternative hypothesis: The complexity of solutions of MLearning-PL is higher than ad hoc approach.</div>
+						<li class="margin-40">H3a: Complexity (MLearning-PL ) > Complexity (ad hoc).</li>
+						
+				<div style="text-align: center;">&nbsp;</div>
+						<b>Q4.</b> Does the use of MLearning-PL provide faster problem solving?</br>
+						<div class="margin-20">Null hypothesis: The efficiency of MLearning-PL is lower or equal to ad hoc approach.</div>
+						<li class="margin-40">H40: Efficiency (MLearning-PL ) ≤ Efficiency (ad hoc).</li>
+						<div class="margin-20">Alternative hypothesis: The efficiency of MLearning-PL is higher than ad hoc approach.</div>
+						<li class="margin-40">H4a: Efficiency (MLearning-PL ) > Efficiency (ad hoc).</li>
+				
+				<div style="text-align: center;">&nbsp;</div>
+				<div style="text-align: center;">&nbsp;</div>
+				<p><strong>Variables Selection</strong></p>
+					<p><b><u>Independent Variables</p></b></u>
+						<ul>
+							<li>Problem resolution approach: MLearning-PL or ad hoc.</li>
+							<li>Subjects’ experience in tutoring and/or teaching.</li>
+							<li>Subjects’ experience in mobile learning.</li>
+							<li>MLearning-PL.</li>
+							<li>Activities proof template.</li>
+						</ul>
+					
+					<p><b><u>Dependent Variables</p></b></u>	
+						<ul>
+							<li>Percentage of problems solved correctly.</li>
+							<li>Completeness of each solution.</li>
+							<li>Complexity of each solution.</li>
+							<li>Time to solve all the problems.</li>
+						</ul>
+					
+					<p><b><u>Experiment Design</p></b></u>	
+						<ul>
+							<li>1 factor and two treatments.</li>
+							<ul>
+								<li style="list-style-type:circle;">Factor: Approach.</li>
+								<li style="list-style-type:circle;">Treatments: MLearning-PL and Ad hoc.</li>
+							</ul>
+							<li>Completely randomized design: The subjects will be randomly assigned to each treatment.</li>
+						</ul>
+					
+					<div style="text-align: center;">&nbsp;</div>
+					<center>
+						<table>
+							<thead>
+									<tr>
+										<th><b>Subject</b></th>
+										<th><b>MLearning-PL</b></th>
+										<th><b>Ad hoc</b></th>
+									<tr/>
+							</thead>
+							<tbody class="tabela-center">
+								<tr>
+									<td class="tabela-tamanho">1</td>
+									<td class="tabela-tamanho">X</td>
+									<td class="tabela-tamanho">-</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>-</td>
+									<td>x</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>X</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>-</td>
+									<td>X</td>
+								</tr>
+								<tr>
+									<td>...</td>
+									<td>X</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td><i>n</i></td>
+									<td>-</td>
+									<td>X</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>		
+					
+				<div style="text-align: center;">&nbsp;</div>
+				<p><b><u>Selection of Subjects</p></b></u>	
+				Convenience sampling: People involved with educational activities, whether they are face-to-face or distance learning, teaching or tutoring and whose learners can be from any course and level.
+				
+				<p><b><u>Experimental Unit</p></b></u>	
+				Activity containing 5 situations involving pedagogical problems to be solved.
+				An example of an exercise involving a pedagogical problem is: <i>“Students may think they understand a topic when they in fact do not. If they think they understand, they will not ask questions and will not know the gaps in their knowledge. How would you mitigate this problem?”</i>.
+				
+				<p><b><u>Instrumentation</p></b></u>	
+				<ul>
+					<li>Characterization form</li>
+					<li>Training material</li>
+					<li>Agreement form</li>
+					<li>Activity description</li>
+					<li>Object: MLearning-PL</li>
+					<li>Answers form</li>
+					<li>Activities proof template</li>
+					<li>Feedback questionnaires</li>
+					<ul>
+						<li style="list-style-type:circle;">Ad hoc</li>
+						<li style="list-style-type:circle;">MLearning-PL</li>
+					</ul>
+				</ul>
+				
+				Before conducting the final experiment, a pilot test will be conducted with four subjects to validate the instruments.
+				
+				<p><b><u>Data analysis</p></b></u>	
+				In order to analyze the collected data, descriptive statistics will be used together with t-test (with p-value = 0,05) to accept or reject the stated hypothesis. 
+
+				<p><b><u>Validity Evaluation</p></b></u>	
+				<ul>
+					<li>Construct</li>
+					<ul>
+						<li style="list-style-type:circle;">The ad hoc approach may not actually represent the traditional way that educators solve these problems</li>
+					</ul>	
+					<li>Internal</li>
+					<ul>
+						<li style="list-style-type:circle;">The time of experience in education of each participant may be a systematic variation in the experiment.</li>
+						<li style="list-style-type:circle;">The selection of problems to be solved by the subjects may not represent the problems faced in educators’ daily basis.</li>
+						<li style="list-style-type:circle;">Support tool used during the experiment.</li>
+						<li style="list-style-type:circle;">Subjects mortality.</li>
+					</ul>
+					<li>External</li>
+					<ul>
+						<li style="list-style-type:circle;">The convenience sampling can insert a systematic variation in the experiment.</li>
+					</ul>
+					<li>Conclusion<li>
+					<ul>
+						<li style="list-style-type:circle;">The size of the available sample may not be sufficient to obtain significant results.</li>
+						<li style="list-style-type:circle;">Subject has never been involved in educational activities.</li>
+					</ul>
+				</ul>
+			<div style="text-align: center;">&nbsp;</div>
+			</div>
+			
+			<div class="texto">
+			<!-- Training-->  			
+				<strong>6. TRAINING</strong>
+				<ul>
+					<li>Definition and procedures</li>
+					<ul>
+					<li style="list-style-type:circle;">The training will be performed in the same day as the experiment to both groups. </li>
+					<li style="list-style-type:circle;">Group using MLearning-PL approach</li>
+							<ul>
+							<li style="list-style-type:square;">Instructor: Maria Lydia Fioravanti</li>
+							<li style="list-style-type:square;">The session will consist of 15 minutes of theoretical presentation on patterns, pedagogical patterns and pattern languages and 5 minutes of theoretical presentation on mobile learning.</li>
+							</ul>
+						
+					<li style="list-style-type:circle;">Group using ad hoc approach</li>
+						<ul>
+							<li style="list-style-type:square;">Instructor: Camila Dias de Oliveira</li>
+							<li style="list-style-type:square;">The session will consist of 5 minutes of theoretical presentation on mobile learning.
+							At the end of the training, the subjects can perform the experiment tasks.</li>
+						</ul>	
+					</ul>		
+					<li>Participants: Group on the "MLearning-PL" treatment</li>
+					<li>Artifacts: Training material (Power Point slides)</li>				
+				</ul>
+							
+			<div style="text-align: center;">&nbsp;</div>
+			</div>
+			
+			<div class="texto">
+			<!-- Execution Procedure-->  			
+				<strong>7. EXECUTION PROCEDURE</strong>
+				<ul>
+					<li>Definition</li>
+					<ul>
+					<li style="list-style-type:circle;">The subjects will apply MLearning-PL and ad hoc approaches in sessions of 2 hours each.</li>
+					<li style="list-style-type:circle;">Both sessions will take place simultaneously in neighboring classrooms.</li>
+					<li style="list-style-type:circle;">Session 1: MLearning-PL</li>
+							<ul>
+							<li style="list-style-type:square;">Instructor: Maria Lydia Fioravanti</li>
+							<li style="list-style-type:square;">After receiving training on patterns and pattern languages and on mobile learning, the subjects will perform the activity containing 5 situations involving pedagogical problems to be solved. They can consult the MLearning-PL throughout the activities.</li>
+							<li style="list-style-type:square;">The participants of this session will receive MLearning-PL 1 day before the experiment for contextualization.</li>
+							</ul>
+						
+					<li style="list-style-type:circle;">Session 2: Ad hoc</li>
+						<ul>
+							<li style="list-style-type:square;">Instructor: Camila Dias de Oliveira</li>
+							<li style="list-style-type:square;">After receiving training on mobile learning, the subjects will perform the same activity of the other group, but they can’t consult any further material, the answers must be based on their previous knowledge.</li>
+						</ul>	
+					</ul>		
+				</ul>
+			<div style="text-align: center;">&nbsp;</div>
+			</div>
+			
+			<div class="texto">
+			<!-- Reference-->  			
+				<p><strong>REFERENCE</strong></p>
+				[1] Alexander, Christopher. The timeless way of building. Vol. 1. New York: Oxford University Press, 1979.</br>
+				[2] McCracken, Michael, et al. "A multi-national, multi-institutional study of assessment of programming skills of first-year CS students." ACM SIGCSE Bulletin 33.4 (2001): 125-180.
+
+		<section>
+
+<!-- Footer-->  			
+		<footer>
+			University of São Paulo  - USP </br>
+			Institute of Mathematics and Computer Science (ICMC)</br>
+			São Carlos - SP, Brazil
+			
+		</footer>
+	</div>
+  </body>
+</html>
